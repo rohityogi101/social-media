@@ -1,0 +1,78 @@
+.App {
+  background-color: #1e1e1e;
+  color: white;
+  margin-top: 5.5rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.card {
+  width: 18rem;
+  background-color: transparent;
+  color: grey;
+}
+
+.wrapper {
+  margin: 0px auto;
+  justify-content: space-evenly;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.card:hover {
+  transform: scale(1.05);
+  /* background-color: rgb(37, 73, 255); */
+  background-color: #C8C8A9;
+  color: #0f0f0f;
+  font-size: 1.01rem;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #fff, 0 0 15px #C8C8A9, 0 0 25px #8a8a7d, 0 0 30px #55554f;
+}
+#r-m{
+  cursor: pointer;
+  color: red;
+}
+.btn{
+  padding: 10px;
+  color: rgb(255, 251, 0);
+  border: 1px solid white;
+}
+.loading {
+  /* color: #37ff00;
+  text-align: center;
+  margin-top: 50px; */
+  font-size: 60px;
+  padding: 0 3rem;
+  color: #37ff00;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #37ff00, 0 0 40px #37ff00, 0 0 50px #37ff00, 0 0 60px #37ff00, 0 0 70px #37ff00;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #78ff6b, 0 0 40px #78ff6b, 0 0 50px #78ff6b, 0 0 60px #78ff6b, 0 0 70px #78ff6b, 0 0 80px #78ff6b;
+  }
+}
+.errorMsg{
+  font-size: 60px;
+  padding: 0 3rem;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: err 1s ease-in-out infinite alternate;
+  -moz-animation: err 1s ease-in-out infinite alternate;
+  animation: err 1s ease-in-out infinite alternate;
+}
+
+@keyframes err {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000, 0 0 70px #e60000;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4d4d, 0 0 40px #ff4d4d, 0 0 50px #ff4d4d, 0 0 60px #ff4d4d, 0 0 70px #ff4d4d, 0 0 80px #ff4d4d;
+  }
+}
